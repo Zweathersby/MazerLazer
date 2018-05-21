@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1595296963594280}
+  m_IsPrefabParent: 1
+--- !u!1 &1595296963594280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4583999040434508}
+  - component: {fileID: 114533560554207014}
+  m_Layer: 0
+  m_Name: MazeSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4583999040434508
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1595296963594280}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &114533560554207014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1595296963594280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dbd480039f60a344bdc0ff90b9d70b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Algorithm: 0
+  FullRandom: 1
+  RandomSeed: 12345
+  Floor: {fileID: 165842, guid: 8d3b36f175a633f429d7bda54c76550d, type: 2}
+  Wall: {fileID: 1681084174658528, guid: 5bb0f1ed79a30497aaab8e56bf60905f, type: 2}
+  OuterWall: {fileID: 1395291617449084, guid: 1a0021c63873748748d10057b1117438, type: 2}
+  Pillar: {fileID: 1727878493460494, guid: 2a9cdd9130a09417c80c87b431990b11, type: 2}
+  Rows: 11
+  Columns: 18
+  CellWidth: 4
+  CellHeight: 4
+  AddGaps: 0
+  HourglassPrefab: {fileID: 1277658684970556, guid: 3af99b870c2784474a393f640b8841dc,
+    type: 2}
+  BombPrefab: {fileID: 1227874098329962, guid: c75a50a91499c411c9b382ed1e8a0c02, type: 2}
+  PlayerWallPrefab: {fileID: 1602026762242144, guid: 6aafa98b15bbd4a029c4c6f3d32b7bd7,
+    type: 2}
+  BlackholePrefab: {fileID: 1542801966789060, guid: c597b222173bf4ac295c839ee734f124,
+    type: 2}
